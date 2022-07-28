@@ -1,0 +1,46 @@
+.form {
+	width: 23rem;
+	margin: 0 auto;
+	display: flex;
+}
+
+.input {
+	-webkit-border-radius:0; 
+    border-radius:0;
+	height: 2.8rem;
+	padding-left: .9rem;
+	outline: none;
+	border: 2px solid rgb(41, 41, 41);
+	border-right: none;
+	font-size: 1.2rem;
+}
+
+.add-todo-btn {
+	-webkit-border-radius:0; 
+    border-radius:0;
+	width: 7rem;
+	cursor: pointer;
+	background-color: rgb(15, 15, 15);
+	color: white;
+	font-size: 1.2rem;
+	outline: none;
+	border: 2px solid rgb(41, 41, 41);
+}
+
+@media only screen and (max-width: 680px) {
+	.form {
+		justify-content: center;
+		width: 95% 
+	}
+	
+	.input {
+		width: 70%;
+		height: 2.6rem;
+		font-size: 1rem;
+	}
+	
+	.add-todo-btn {
+		width: 30%;
+		font-size: 1rem;
+	}
+}

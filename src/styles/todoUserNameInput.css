@@ -1,0 +1,33 @@
+.user-name-box{
+   margin-bottom: 2rem;
+   padding-top: 2rem;
+}
+
+.user-name-box form div{
+   display: flex;
+   justify-content: center;
+   height: 2.8rem;
+}
+
+.only-visible-to-you{  margin-top: 0; }
+
+.user-name-input{
+   border: 1px solid black;
+   border-right: none;
+   width: 10rem;
+   /* height: 2.8rem; */
+   padding-left: .5rem;
+   outline: 0;
+   font-size: 1.2rem;
+}
+
+.user-name-submit{
+   /* height: 2.9rem; */
+   padding: 0 1rem;
+   border-radius: 0;
+   outline: none;
+   text-decoration: none;
+   border: 1px solid black;
+   background: rgb(54, 54, 54);
+   color: white;
+}

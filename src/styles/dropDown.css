@@ -1,0 +1,49 @@
+.dropdown-container {
+	position: absolute;
+	left: 0;
+	padding-top: 2rem;
+}
+
+.hamburger-container {
+	display: flex;
+}
+
+.hamburgerImg {
+	width: 2.2rem;
+	height: 2.2rem;
+}
+
+.menu {
+	display: block;
+	z-index: 6;
+	cursor: pointer;
+	margin-left: 1rem;
+	width: 10rem;
+	height: 14rem; 
+	background-color: white;
+	border: 2px solid black;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu div {
+	line-height: 2.75rem;
+	color: black;
+}
+
+.menu div a {
+	text-decoration: none;
+	color: black;
+	
+}
+
+.menu div:hover {
+	background-color: rgb(213, 245, 255);
+}
+
+@media only screen and (max-width: 680px) {
+	.dropdown-container {
+		padding-top: 1.3rem;
+		padding-left: 1.3rem;
+	}
+}

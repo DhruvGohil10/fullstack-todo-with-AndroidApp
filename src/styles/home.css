@@ -1,0 +1,49 @@
+.homeBackground {
+	min-height: 100vh;
+	width: 100vw;
+	/* background-image: linear-gradient(120deg, #a1c4fd 0%, #fadaff 100%); */
+}
+
+.homeBackground-dark {
+	background-color: #111111;
+}
+
+.card {
+	width: 31rem;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 3rem 2rem 3rem;
+}
+
+.card-dark {
+	background-color: rgb(31, 31, 31);
+	color: white;
+}
+
+.homeContainer {
+	width: 31rem;
+	text-align: center;
+}
+
+.top-section {
+	position: relative;
+}
+
+/* mobile ---------------------------------------------- */
+@media only screen and (max-width: 680px) {
+	.card {
+		width: 100vw;
+		min-height: 100vh;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 1.7rem;
+	}
+
+	.card-dark {
+		background-color: rgb(20, 20, 20);
+	}
+
+	.homeContainer {
+		width: 100%;
+	}
+}

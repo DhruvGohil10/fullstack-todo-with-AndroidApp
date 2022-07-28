@@ -1,0 +1,65 @@
+.signInContainer {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(29, 29, 29);
+	/* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+   width: 20rem;
+   text-align: center;
+}
+
+.h1 {
+	padding: 0;
+	margin: 0;
+	color: white;
+   font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.button-8 {
+	background-color: #b3d3ea;
+	height: 3rem;
+   width: 9;
+	border-radius: 3px;
+	border: 1px solid #7aa7c7;
+	box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+	box-sizing: border-box;
+	color: #12476d;
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.15385;
+	margin: 2rem auto 0 auto;
+	outline: none;
+	padding: 8px .8em;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+	background-color: #d1eafc;
+	color: #2c5777;
+}
+
+.button-8:focus {
+	box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+	background-color: #a0c7e4;
+	box-shadow: none;
+	color: #2c5777;
+}

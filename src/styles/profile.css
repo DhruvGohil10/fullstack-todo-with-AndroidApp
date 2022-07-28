@@ -1,0 +1,8 @@
+.todoUserName {
+   margin: 0;
+   padding: 2rem 0;
+}
+
+@media only screen and (max-width: 680px) {
+	.todoUserName{ padding-top: 1.3rem; }
+}
