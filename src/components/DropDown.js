@@ -62,7 +62,7 @@ function DropDown ({ renderSignIn, docId }) {
 	return (
 		<div className='dropdown-container'>
 			<div ref={ref} className='hamburger-container'>
-				<img src={hamburgerIcon} className='hamburgerImg' onClick={hamburger} />
+				<img src={hamburgerIcon} className='hamburgerImg' onClick={hamburger} alt="Hamburger"/>
 
 				{hamburgerOpen && (
 					<div className='menu'>
@@ -77,7 +77,7 @@ function DropDown ({ renderSignIn, docId }) {
 							</a>
 						</div>
 						<div>
-							<a href='https://docs.google.com/uc?export=download&id=12mP-pHZuOJQFeWcUgTKDvyiDIS8wti-R' target='_blank'>
+							<a href='https://docs.google.com/uc?export=download&id=158e8t9IoeR6uo3aCou3RIaS5uKCFoh2D' target='_blank'>
 								Android App 📱
 							</a>
 						</div>

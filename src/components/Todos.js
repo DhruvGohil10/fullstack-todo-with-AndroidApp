@@ -5,7 +5,8 @@ import {
 	where,
 	deleteDoc,
 	doc,
-	updateDoc
+	updateDoc,
+	orderBy
 } from 'firebase/firestore';
 import { useContext, useEffect, useState } from 'react';
 import { db } from '../firebase';
@@ -19,12 +20,14 @@ function Todos ({ user }) {
 
 	useEffect(() => {
 		const uid = user.uid;
-		const q = query(collection(db, 'todos'), where('uid', '==', uid));
+		const q = query(collection(db, 'todos'), where('uid', '==', uid), orderBy("Timestamp", "asc"));
 
+		
 		const unsubscribe = onSnapshot(q, (snapshot) => {
 			let parssedTodos = [];
-
+			// console.log(snapshot)
 			snapshot.forEach((doc) => {
+
 				let obj = {
 					todo: doc.data().todo,
 					completed: doc.data().completed,

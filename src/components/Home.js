@@ -29,7 +29,8 @@ function Home ({ renderSignIn, user, docId }) {
 		return () => unsubscribe();
 	}, []);
 
-	useEffect(() => { // chosses a random color for background 
+	 // chosses a random color for background 
+	useEffect(() => {
 		var randomColor = colors[Math.floor(Math.random()*colors.length)];
 		setBackgroundColor(randomColor)
 	}, [])

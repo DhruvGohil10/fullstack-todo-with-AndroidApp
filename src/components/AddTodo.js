@@ -1,6 +1,7 @@
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useState } from 'react';
+import { Firestore } from 'firebase/firestore';
 import './../styles/addTodo.css'
 
 function AddTodo ({user}) {
@@ -17,7 +18,8 @@ function AddTodo ({user}) {
 				todo: input,
 				uid: user.uid,
 				completed: false,
-				todoId: ''
+				todoId: '',
+				Timestamp: serverTimestamp()
 			});
 		}
 
